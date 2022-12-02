@@ -1,0 +1,72 @@
+.team {
+    display: flex;
+    gap: 30px;
+}
+
+.tm-wrap {
+    width: calc((100% - 90px) / 4);
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
+.section-team {
+    background-color: var(--title-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.tm-name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.prof {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-iteam {
+    width: 44px;
+    height: 44px;
+}
+
+.social-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    fill: var(--primary-icon-color);
+    transition: fill var(--tra), background-color var(--tra);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.social-link:hover .social-icons {
+    fill: var(--primary-white-color);
+}
+
+.social-link:focus .social-icons {
+    fill: var(--primary-white-color);
+}
