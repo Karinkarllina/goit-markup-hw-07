@@ -1,10 +1,10 @@
-.work-container {
+.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.work-iteam {
+.projects__iteam {
     width: calc((100% - 60px) / 3);
     transition: box-shadow var(--tra);
     &:hover,
@@ -13,12 +13,16 @@
     }
 }
 
-.work-top-wrap {
+.projects__link {
+    text-decoration: none;
+}
+
+.projects__wrap {
     position: relative;
     overflow: hidden;
 }
 
-.work-text {
+.projects__text {
     position: absolute;
     top: 0;
     background-color: rgba(33, 150, 243, 0.9);
@@ -30,12 +34,19 @@
     transform: translateY(100%);
     height: 100%;
     transition: var(--tra);
-    .work-iteam:hover & {
+    .projects__iteam:hover & {
         transform: translateY(0);
     }
 }
 
-.name-work {
+.projects__border {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.projects__name {
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2.0;
@@ -43,21 +54,9 @@
     margin-bottom: 4px;
 }
 
-.type-work {
+.projects__type {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
-
-.work {
-    text-decoration: none;
-}
-
-.border-work {
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    padding: 20px 24px;
-}
-

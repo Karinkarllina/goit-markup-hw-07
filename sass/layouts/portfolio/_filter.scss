@@ -1,16 +1,16 @@
-.section.filter-wrap {
+.filter {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.filter {
+.filter__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     gap: 8px;
 }
 
-.filter .button {
+.filter-list__button {
     color: var(--title-text-color);
     background-color: var(--title-background-color);
     font-family: inherit;
